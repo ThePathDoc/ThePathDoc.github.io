@@ -20,11 +20,28 @@ nav {
     padding: 12px;
     text-align: center;
 }
+
 nav a {
     color: #0B1D3A;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+    background: #0B1D3A;
+    color: white;
+}
+
+/* Active page glow */
+.active {
+    background: #0B1D3A;
+    color: white;
+    box-shadow: 0 0 10px rgba(11,29,58,0.6);
 }
 .container {
     max-width: 800px;
