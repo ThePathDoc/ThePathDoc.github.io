@@ -6,35 +6,61 @@
 <style>
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
     margin: 0;
+    background: linear-gradient(to right, #f8e1f4, #fce4ec); /* H&E vibe */
 }
 
+/* HEADER */
 header {
-    background: #1b4332;
+    background: #6a1b9a; /* hematoxylin purple */
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* NAVBAR */
+nav {
+    background: #ad1457; /* eosin pink */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN CONTAINER */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-h1 { margin: 0; }
+/* HEADINGS */
+h2 {
+    color: #6a1b9a;
+}
 
+/* LINKS */
 a {
+    color: #ad1457;
     text-decoration: none;
-    color: #0077b6;
 }
 
-ul {
-    padding-left: 20px;
+/* CATEGORY BOX */
+.category {
+    margin-bottom: 20px;
 }
 </style>
 
@@ -43,20 +69,51 @@ ul {
 <body>
 
 <header>
-    <h1>🧬 PathDoc</h1>
-    <p>By Surendhar | Pathology • Research • Lab Insights</p>
+    <h1>PathDoc</h1>
+    <p>By Surendhar | Veterinary Pathology • Research • Lab Insights</p>
 </header>
 
-<div class="container">
-    <h2>Welcome</h2>
-    <p>
-    PathDoc is a platform where I share insights on pathology, research, and lab experiences.
-    </p>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#vetpath">VetPath</a>
+    <a href="#toxpath">ToxPath</a>
+    <a href="#cellculture">Cell Culture</a>
+</nav>
 
-    <h2>Blog</h2>
-    <ul>
-        <li><a href="post1.html">From Contamination to Control</a></li>
-    </ul>
+<div class="container">
+
+    <!-- ABOUT -->
+    <div id="about" class="category">
+        <h2>About Me</h2>
+        <p>
+        I am a Veterinary Pathologist and PhD scholar with experience in toxicology, cell culture, and experimental pathology. My work focuses on postmortem interval estimation, aquatic pathology, and translational research.
+        </p>
+    </div>
+
+    <!-- VETPATH -->
+    <div id="vetpath" class="category">
+        <h2>VetPath</h2>
+        <ul>
+            <li><a href="#">Coming soon: Histopath cases</a></li>
+        </ul>
+    </div>
+
+    <!-- TOXPATH -->
+    <div id="toxpath" class="category">
+        <h2>ToxPath</h2>
+        <ul>
+            <li><a href="#">Coming soon: Toxicology insights</a></li>
+        </ul>
+    </div>
+
+    <!-- CELL CULTURE -->
+    <div id="cellculture" class="category">
+        <h2>Cell Culture</h2>
+        <ul>
+            <li><a href="post1.html">From Contamination to Control</a></li>
+        </ul>
+    </div>
+
 </div>
 
 </body>
