@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> ❤️ Rhythm </title>
+<title> ❤️ Rhythm</title>
 
 <style>
-body { font-family:'Segoe UI'; margin:0; background:#F5F5F0; }
-header { background:#0B1D3A; color:white; padding:30px; text-align:center; }
-nav { background:#C9A227; padding:12px; text-align:center; }
-nav a { color:#0B1D3A; margin:0 15px; text-decoration:none; font-weight:bold; }
-
-.container {
- max-width:800px;
- margin:60px auto;
- background:white;
- padding:35px;
- border-radius:12px;
+body {
+    font-family:'Segoe UI';
+    margin:0;
+    background:#F5F5F0;
 }
 
+/* HEADER */
+header {
+    background:#0B1D3A;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+/* NAVBAR */
+nav {
+    background:#C9A227;
+    padding:12px;
+    text-align:center;
+}
+
+nav a {
+    color:#0B1D3A;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+nav a:hover {
+    background:#0B1D3A;
+    color:white;
+}
+
+.active {
+    background:#0B1D3A;
+    color:white;
+}
+
+/* CONTENT */
+.container {
+    max-width:800px;
+    margin:60px auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+}
+
+/* POEM */
 .poem {
- white-space:pre-line;
- line-height:1.8;
+    white-space:pre-line;
+    line-height:1.8;
 }
 </style>
 
@@ -29,16 +66,21 @@ nav a { color:#0B1D3A; margin:0 15px; text-decoration:none; font-weight:bold; }
 
 <header>
 <h1>PathDoc</h1>
+<p>Reflections & Personal Insights</p>
 </header>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="misc.html">Random Thoughts</a>
+<a href="about.html">About Me</a>
+<a href="vetpath.html">VetPath</a>
+<a href="toxpath.html">ToxPath</a>
+<a href="cellculture.html">Cell Culture</a>
+<a href="misc.html" class="active">Random Thoughts</a>
 </nav>
 
 <div class="container">
 
-<h2>❤️ Rhythm </h2>
+<h2> ❤️ Rhythm</h2>
 
 <div class="poem">
 A thought of you evokes arrhythmia,
